@@ -77,30 +77,6 @@ function printUser3({ name, age }) {
   console.log(`Name is: ${name}. Age is ${age}`);
 }
 
-printUser3(personOne);
-printUser3(personTwo);
-printUser3(personThree);
-
-console.warn("FOURTH FUNCTION");
-
-function printUser4({ ...Allproperties }) {
-  //   console.log(Allproperties.address);
-  console.log(`Name is: ${Allproperties.name}. Age is ${Allproperties.age}`);
-}
-
-printUser4(personOne);
-printUser4(personTwo);
-printUser4(personThree);
-
-console.warn("FIFTH FUNCTION");
-
-function printUser5({ ...Allproperties }) {
-  with (Allproperties) {
-    // console.log(address);
-    console.log(`Name is: ${name}. Address is: ${address.city}`);
-  }
-}
-
-printUser5(personOne);
-printUser5(personTwo);
-printUser5(personThree);
+printUser3(personOne, personTwo);
+// printUser3(personTwo);
+// printUser3(personThree);

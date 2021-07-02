@@ -84,8 +84,8 @@ printUser3(personThree);
 console.warn("FOURTH FUNCTION");
 
 function printUser4({ ...Allproperties }) {
-  //   console.log(Allproperties.address);
-  console.log(`Name is: ${Allproperties.name}. Age is ${Allproperties.age}`);
+  console.log(Allproperties.address);
+  //   console.log(`Name is: ${Allproperties.name}. Age is ${Allproperties.age}`);
 }
 
 printUser4(personOne);
@@ -96,8 +96,7 @@ console.warn("FIFTH FUNCTION");
 
 function printUser5({ ...Allproperties }) {
   with (Allproperties) {
-    // console.log(address);
-    console.log(`Name is: ${name}. Address is: ${address.city}`);
+    console.log(address);
   }
 }
 

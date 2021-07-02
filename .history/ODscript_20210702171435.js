@@ -97,7 +97,8 @@ console.warn("FIFTH FUNCTION");
 function printUser5({ ...Allproperties }) {
   with (Allproperties) {
     // console.log(address);
-    console.log(`Name is: ${name}. Address is: ${address.city}`);
+    console.log(`Name is: ${Allproperties.name}. Age is ${Allproperties.age}`);
+}
   }
 }
 
