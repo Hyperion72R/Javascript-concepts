@@ -15,13 +15,6 @@
 
 // 2 Example
 
-let stocks = {
-  Fruits: ["strawberry", "grapes", "banana", "apple"],
-  liquid: ["water", "ice"],
-  holder: ["cone", "cup", "stick"],
-  toppings: ["chocolate", "peanuts"],
-};
-
 let order = (call_production) => {
   console.log("order placed, please call production");
   call_production();
