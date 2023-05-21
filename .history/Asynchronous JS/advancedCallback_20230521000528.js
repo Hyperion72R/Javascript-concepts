@@ -24,22 +24,12 @@ let stocks = {
 
 let order = (Fruit_name, call_production) => {
   setTimeout(() => {
-    console.log(`${stocks.Fruits[Fruit_name]} was selected`);
-    call_production();
+    console.log(`${Fruit_name}`);
   }, 2000);
+
+  call_production();
 };
 
-let production = () => {
-  setTimeout(() => {
-    console.log("production has started");
+let production = () => {};
 
-    setTimeout(() => {
-      console.log("the fruit has been chopped");
-      setTimeout(() => {
-        console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} was added`);
-      }, 1000);
-    }, 2000);
-  }, 0000);
-};
-
-order(1, production);
+order(stock.Fruits[1], production);

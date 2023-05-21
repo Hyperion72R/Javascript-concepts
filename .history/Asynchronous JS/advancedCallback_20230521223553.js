@@ -36,7 +36,7 @@ let production = () => {
     setTimeout(() => {
       console.log("the fruit has been chopped");
       setTimeout(() => {
-        console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} was added`);
+        console.log("watter was added");
       }, 1000);
     }, 2000);
   }, 0000);
