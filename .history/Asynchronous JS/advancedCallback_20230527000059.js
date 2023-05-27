@@ -40,13 +40,7 @@ let production = () => {
         setTimeout(() => {
           console.log("the machine was started");
           setTimeout(() => {
-            console.log(`ice cream was placed on${stocks.holder[0]} `);
-            setTimeout(() => {
-              console.log(`${stocks.toppings[1]} was added as toppings`);
-              setTimeout(() => {
-                console.log("serve ice cream");
-              }, 2000);
-            }, 3000);
+            console.log(`${stocks.holder[0]}`);
           }, 2000);
         }, 1000);
       }, 1000);

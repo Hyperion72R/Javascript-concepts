@@ -43,9 +43,6 @@ let production = () => {
             console.log(`ice cream was placed on${stocks.holder[0]} `);
             setTimeout(() => {
               console.log(`${stocks.toppings[1]} was added as toppings`);
-              setTimeout(() => {
-                console.log("serve ice cream");
-              }, 2000);
             }, 3000);
           }, 2000);
         }, 1000);
