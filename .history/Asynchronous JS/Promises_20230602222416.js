@@ -29,31 +29,9 @@ order(2000, () => {
   })
 
   .then(() => {
-    return order(2000, () => {
-      console.log(`the fruit was chopped`);
+    return order(0000, () => {
+      console.log(`${stocks.liquid[1]} was chopped`);
     });
   })
 
-  .then(() => {
-    return order(1000, () => {
-      console.log(`${stocks.liquid[1]} and ${stocks.liquid[0]} was selected`);
-    });
-  })
-
-  .then(() => {
-    return order(1000, () => {
-      console.log("machine has started");
-    });
-  })
-
-  .then(() => {
-    return order(2000, () => {
-      console.log(`The ${stocks.holder[1]} was selected`);
-    });
-  })
-
-  .then(() => {
-    return order(2000, () => {
-      console.log(`The ${stocks.toppings[0]} was selected`);
-    });
-  });
+  .then();
