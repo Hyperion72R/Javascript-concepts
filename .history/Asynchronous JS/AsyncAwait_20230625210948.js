@@ -38,7 +38,7 @@ let is_shop_open = true;
 let toppings_choice = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(console.log("which topping would you love? "));
+      console.log("which topping would you love? ");
     }, 3000);
   });
 };
@@ -53,9 +53,3 @@ async function kitchen() {
   console.log(" D ");
   console.log(" E ");
 }
-
-kitchen();
-
-console.log("doing the dishes ");
-console.log("cleaning the table ");
-console.log("taking others orders ");
