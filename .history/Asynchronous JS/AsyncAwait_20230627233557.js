@@ -5,7 +5,7 @@ let stocks = {
   toppings: ["chocolate", "peanuts"],
 };
 
-let is_shop_open = true;
+let is_shop_open = false;
 
 // let order = () =>{
 
@@ -77,7 +77,7 @@ async function kitchen() {
   } catch (error) {
     console.log("customer left", error);
   } finally {
-    console.log("day ended, shop is closed");
+    console.log(`${stocks.Fruits[1]}`);
   }
 }
 

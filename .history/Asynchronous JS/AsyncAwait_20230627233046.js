@@ -72,12 +72,9 @@ function time(ms) {
 
 async function kitchen() {
   try {
-    await time(2000);
-    console.log(`${stocks.Fruits[1]}`);
+    time(1000);
   } catch (error) {
-    console.log("customer left", error);
   } finally {
-    console.log("day ended, shop is closed");
   }
 }
 

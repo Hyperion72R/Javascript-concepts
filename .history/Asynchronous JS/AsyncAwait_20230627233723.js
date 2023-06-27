@@ -5,7 +5,7 @@ let stocks = {
   toppings: ["chocolate", "peanuts"],
 };
 
-let is_shop_open = true;
+let is_shop_open = false;
 
 // let order = () =>{
 
@@ -63,7 +63,7 @@ let is_shop_open = true;
 function time(ms) {
   return new Promise((resolve, reject) => {
     if (is_shop_open) {
-      setTimeout(resolve(console.log("work")), ms);
+      setTimeout(resolve, ms);
     } else {
       reject(console.log("shop is closed"));
     }
