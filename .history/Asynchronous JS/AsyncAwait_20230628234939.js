@@ -75,11 +75,8 @@ async function kitchen() {
     await time(2000);
     console.log(`${stocks.Fruits[1]}`);
 
-    await time(500);
-    console.log("start the production");
-
     await time(2000);
-    console.log("cut the fruit");
+    console.log("start the production");
   } catch (error) {
     console.log("customer left", error);
   } finally {

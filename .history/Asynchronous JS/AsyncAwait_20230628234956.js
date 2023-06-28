@@ -77,9 +77,6 @@ async function kitchen() {
 
     await time(500);
     console.log("start the production");
-
-    await time(2000);
-    console.log("cut the fruit");
   } catch (error) {
     console.log("customer left", error);
   } finally {
