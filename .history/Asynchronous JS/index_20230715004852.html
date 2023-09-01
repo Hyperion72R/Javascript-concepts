@@ -28,34 +28,23 @@ y= Math.round(Math.random() * 2)
 
 
 z=x[y]
-console.log("=======NOWA GRA=======");
+console.log(z)
 
-console.log("komputer wybrał "+z)
 
-console.log("TEST"+el)
   var amount = el.getAttribute('value'); 
   // OR: simply 
   // var amount = el.value;
-  console.log("|||||||||||||PRZETWARZANIE|||||||||||||");
-  console.log("Ty wybrałeś "+amount);
-  console.log("|||||||||||||PRZETWARZANIE|||||||||||||");
+  console.log("przerwa");
+  console.log(amount);
+  console.log("przerwa");
 
   if(amount===z) {
     console.log("remis")
-  } else if(z==="Rock" && amount==="Paper") {
-    console.log("Wygrałeś")
-  } else if(z==="Rock" && amount==="Scissors") {
-    console.log("Przegrałeś")
-  } else if(z==="Paper" && amount==="Scissors") {
-    console.log("Wygrałeś")
-  } else if(z==="Paper" && amount==="Rock") {
-    console.log("Przegrałeś")
-  } else if(z==="Scissors" && amount==="Rock") {
-    console.log("Wygrałeś")
-  } else if(z==="Scissors" && amount==="Paper") {
-    console.log("Przegrałeś");
-  } 
-  console.log("=======KONIEC GRY=======");
+  } else if(z==="Rock") {
+    console.log("Mamy rock")
+  } else if(amount==="Rock") {
+    console.log("Mamy rock 2")
+  }
 
 
 
