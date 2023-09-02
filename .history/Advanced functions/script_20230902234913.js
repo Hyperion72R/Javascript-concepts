@@ -21,9 +21,3 @@ y = square(70);
 console.log("NEXT");
 
 displaySquare(square);
-
-function displaySquare2(fn) {
-  console.log("SquareV2 is " + fn);
-}
-
-displaySquare2(square(3));

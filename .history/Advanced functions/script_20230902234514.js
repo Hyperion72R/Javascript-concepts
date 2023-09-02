@@ -13,17 +13,11 @@ console.log(x);
 // First Class Func
 
 function displaySquare(fn) {
-  console.log("Square is " + fn(70));
+  console.log("Square is " + fn());
 }
 
 y = square(70);
 
+displaySquare(y);
 console.log("NEXT");
-
-displaySquare(square);
-
-function displaySquare2(fn) {
-  console.log("SquareV2 is " + fn);
-}
-
-displaySquare2(square(3));
+console.log(displaySquare);
