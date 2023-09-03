@@ -31,16 +31,10 @@ displaySquare2(square(3));
 // IIFE
 console.log("                       NEXT");
 
-function test(num) {
-  console.time();
-  console.log(`NOW! V${num} `);
+function test() {
+  console.time(num);
+  console.log(`NOW! ${num} `);
   console.timeEnd();
 }
 
 test(1);
-
-(function test2(num) {
-  console.time();
-  console.log(`NOW! V${num} `);
-  console.timeEnd();
-})(2);

@@ -38,9 +38,3 @@ function test(num) {
 }
 
 test(1);
-
-(function test2(num) {
-  console.time();
-  console.log(`NOW! V${num} `);
-  console.timeEnd();
-})(2);

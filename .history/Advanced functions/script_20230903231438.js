@@ -18,7 +18,7 @@ function displaySquare(fn) {
 
 y = square(70);
 
-console.log("                       NEXT");
+console.log("NEXT");
 
 displaySquare(square);
 
@@ -29,18 +29,9 @@ function displaySquare2(fn) {
 displaySquare2(square(3));
 
 // IIFE
-console.log("                       NEXT");
 
-function test(num) {
-  console.time();
-  console.log(`NOW! V${num} `);
-  console.timeEnd();
+function test(x) {
+  console.log("x");
 }
 
-test(1);
-
-(function test2(num) {
-  console.time();
-  console.log(`NOW! V${num} `);
-  console.timeEnd();
-})(2);
+test(x4356r);
