@@ -50,5 +50,5 @@ test(1);
 (function (x) {
   return (function (y) {
     console.log(x);
-  })(4);
-})(4);
+  })(2);
+})(1);

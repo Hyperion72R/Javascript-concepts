@@ -51,4 +51,4 @@ test(1);
   return (function (y) {
     console.log(x);
   })(4);
-})(4);
+})(1);
