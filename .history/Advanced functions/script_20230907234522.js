@@ -68,6 +68,5 @@ function HoistingExmpl() {
 }
 // HoistingExmpl();
 
-console.log(x);
 let x = 5;
-// console.log(x);
+console.log(x);

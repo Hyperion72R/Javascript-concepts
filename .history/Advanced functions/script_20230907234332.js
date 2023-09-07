@@ -61,13 +61,7 @@
 //   }, i * 1000);
 // }
 
-// Function Hoisting
-HoistingExmpl();
-function HoistingExmpl() {
-  console.log("TEST");
-}
-// HoistingExmpl();
 
-console.log(x);
-let x = 5;
-// console.log(x);
+// Function Hoisting
+
+function
