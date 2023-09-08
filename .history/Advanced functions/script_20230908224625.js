@@ -81,4 +81,4 @@ var fun = function () {
   var x = 20;
 };
 
-fun();
+fun;
