@@ -89,10 +89,3 @@ function multiply(num1, num2) {
 var arr = [5, 6];
 
 multiply(...arr);
-
-function multiplyinf(...nums) {
-  console.log(nums);
-}
-var arr2 = [5, 6];
-
-multiplyinf(...arr2);

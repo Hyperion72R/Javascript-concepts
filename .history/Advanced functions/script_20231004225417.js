@@ -74,25 +74,9 @@
 
 // Function Hoisting
 
-// var x = 21;
+var fun = function () {
+  console.log(x);
+  var x = 20;
+};
 
-// var fun = function () {
-//   console.log(x);
-//   var x = 20;
-// };
-
-// fun();
-
-function multiply(num1, num2) {
-  console.log(num1 * num2);
-}
-var arr = [5, 6];
-
-multiply(...arr);
-
-function multiplyinf(...nums) {
-  console.log(nums);
-}
-var arr2 = [5, 6];
-
-multiplyinf(...arr2);
+fun();

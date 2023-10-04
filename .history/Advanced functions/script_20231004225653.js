@@ -95,4 +95,4 @@ function multiplyinf(...nums) {
 }
 var arr2 = [5, 6];
 
-multiplyinf(...arr2);
+multiply2(...arr2);
