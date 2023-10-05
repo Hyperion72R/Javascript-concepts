@@ -83,22 +83,16 @@
 
 // fun();
 
-// function multiply(num1, num2) {
-//   console.log(num1 * num2);
-// }
-// var arr = [5, 6];
+function multiply(num1, num2) {
+  console.log(num1 * num2);
+}
+var arr = [5, 6];
 
-// multiply(...arr);
+multiply(...arr);
 
-// function multiplyinf(...nums) {
-//   console.log(nums);
-// }
-// var arr2 = [5, 6];
+function multiplyinf(...nums) {
+  console.log(nums);
+}
+var arr2 = [5, 6];
 
-// multiplyinf(...arr2);
-
-const fn = (a, x, y, ...numbers) => {
-  console.log(x, y, numbers);
-};
-
-fn(5, 6, 3, 7, 10, 20);
+multiplyinf(...arr2);
