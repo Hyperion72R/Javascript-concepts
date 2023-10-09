@@ -97,8 +97,25 @@
 
 // multiplyinf(...arr2);
 
-const fn = (a, x, y, ...numbers) => {
-  console.log(x, y, numbers);
-};
+// const fn = (a, x, y, ...numbers) => {
+//   console.log(x, y, numbers);
+// };
 
-fn(5, 6, 3, 7, 10, 20);
+// fn(5, 6, 3, 7, 10, 20);
+
+// function fn2(...nums) {
+//   console.log(nums[0] * nums[1]);
+// }
+// var arr2 = [3, 4];
+
+// fn2(...arr2);
+
+// const x1 = (a, b, c, ...rest) => {
+//   console.log(a, b, c, rest);
+// };
+
+// x1(1, 2, 3, 4, 5, 6, 7);
+
+// Callback function
+
+document.addEventListener("click", function (params) {});
