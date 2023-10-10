@@ -123,6 +123,7 @@
 // Arrow functions
 
 const add = function (firstNum, secondNum) {
+  return firstNum + secondNum;
   console.log(firstNum + secondNum);
 };
 

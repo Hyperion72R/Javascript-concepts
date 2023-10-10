@@ -123,10 +123,12 @@
 // Arrow functions
 
 const add = function (firstNum, secondNum) {
+  return firstNum + secondNum;
   console.log(firstNum + secondNum);
 };
 
 const add2 = (firstNum, secondNum) => {
+  return firstNum + secondNum;
   console.log(firstNum + secondNum);
 };
 

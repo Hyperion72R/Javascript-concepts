@@ -121,14 +121,3 @@
 // document.addEventListener("click", function (params) {});
 
 // Arrow functions
-
-const add = function (firstNum, secondNum) {
-  console.log(firstNum + secondNum);
-};
-
-const add2 = (firstNum, secondNum) => {
-  console.log(firstNum + secondNum);
-};
-
-add(1, 2);
-add2(1, 2);
