@@ -145,8 +145,8 @@ const square2 = (num) => {
 
 const square3 = (num) => num * num;
 
-function fn() {
-  console.log(arguments);
+function fn(arguments) {
+  console.log(...arguments);
 }
 
 fn(1, 2, 3);
