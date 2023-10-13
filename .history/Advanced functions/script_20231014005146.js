@@ -152,7 +152,6 @@
 // fn(1, 2, 3);
 
 // this keyword
-let username = "tester2";
 
 let user = {
   username: "tester",
