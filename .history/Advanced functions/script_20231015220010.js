@@ -186,7 +186,7 @@
 // console.log(name2);
 
 function subscribe() {
-  var name = "Roadside Coder";
+  var name = "Roadsice Coder";
   function displayName() {
     alert(name);
   }

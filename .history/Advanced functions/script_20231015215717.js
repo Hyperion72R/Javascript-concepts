@@ -171,26 +171,13 @@
 
 // lexical scope
 
-// var name = "test";
-// // global scope
+var name = "test";
+// global scope
 
-// function local() {
-//   // local scope
+function local() {
+  // local scope
 
-//   console.log(name);
-//   var name2 = "test2";
-// }
-
-// local();
-
-// console.log(name2);
-
-function subscribe() {
-  var name = "Roadside Coder";
-  function displayName() {
-    alert(name);
-  }
-  displayName();
+  console.log(name);
 }
 
-subscribe();
+local();
