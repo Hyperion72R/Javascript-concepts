@@ -198,7 +198,7 @@
 function makeFunc() {
   var name = "Mozilla";
   function displayName(num) {
-    console.log(name, num);
+    console.log(name);
   }
   return displayName;
 }
