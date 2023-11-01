@@ -223,10 +223,9 @@ const e = 10;
 let x = function sum(a) {
   return function sum2(b) {
     return function sum3(c) {
-      // outer functions scope
+      return a + b + c + d + e;
       return function sum4(d) {
         // local scope
-        return a + b + c + d + e;
       };
     };
   };

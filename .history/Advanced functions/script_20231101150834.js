@@ -218,18 +218,3 @@ function makeFunc() {
 }
 
 makeFunc()(7);
-
-const e = 10;
-let x = function sum(a) {
-  return function sum2(b) {
-    return function sum3(c) {
-      // outer functions scope
-      return function sum4(d) {
-        // local scope
-        return a + b + c + d + e;
-      };
-    };
-  };
-};
-
-console.log(x(1)(2)(3)(4));

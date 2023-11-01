@@ -195,41 +195,12 @@
 
 // subscribe();
 
-// function makeFunc() {
-//   var name = "Mozilla";
-//   function displayName(num) {
-//     console.log(name, num);
-//   }
-//   return displayName;
-// }
-
-// makeFunc()(5);
-
-// Closure Scope Chain
-
-var username = "Test";
-
 function makeFunc() {
   var name = "Mozilla";
   function displayName(num) {
-    console.log(name, num, username);
+    console.log(name, num);
   }
   return displayName;
 }
 
-makeFunc()(7);
-
-const e = 10;
-let x = function sum(a) {
-  return function sum2(b) {
-    return function sum3(c) {
-      // outer functions scope
-      return function sum4(d) {
-        // local scope
-        return a + b + c + d + e;
-      };
-    };
-  };
-};
-
-console.log(x(1)(2)(3)(4));
+makeFunc()(5);

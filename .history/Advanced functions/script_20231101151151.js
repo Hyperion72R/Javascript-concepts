@@ -220,7 +220,7 @@ function makeFunc() {
 makeFunc()(7);
 
 const e = 10;
-let x = function sum(a) {
+function sum(a) {
   return function sum2(b) {
     return function sum3(c) {
       // outer functions scope
@@ -230,6 +230,6 @@ let x = function sum(a) {
       };
     };
   };
-};
+}
 
-console.log(x(1)(2)(3)(4));
+console.log(sum4);
