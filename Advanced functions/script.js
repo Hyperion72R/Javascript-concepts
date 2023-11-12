@@ -207,29 +207,38 @@
 
 // Closure Scope Chain
 
-var username = "Test";
+// var username = "Test";
 
-function makeFunc() {
-  var name = "Mozilla";
-  function displayName(num) {
-    console.log(name, num, username);
+// function makeFunc() {
+//   var name = "Mozilla";
+//   function displayName(num) {
+//     console.log(name, num, username);
+//   }
+//   return displayName;
+// }
+
+// makeFunc()(7);
+
+// const e = 10;
+// let x = function sum(a) {
+//   return function sum2(b) {
+//     return function sum3(c) {
+//       // outer functions scope
+//       return function sum4(d) {
+//         // local scope
+//         return a + b + c + d + e;
+//       };
+//     };
+//   };
+// };
+
+// console.log(x(1)(2)(3)(4));
+
+let count = 0;
+(function printCount() {
+  if (count === 0) {
+    let count = 1;
+    console.log(count);
   }
-  return displayName;
-}
-
-makeFunc()(7);
-
-const e = 10;
-let x = function sum(a) {
-  return function sum2(b) {
-    return function sum3(c) {
-      // outer functions scope
-      return function sum4(d) {
-        // local scope
-        return a + b + c + d + e;
-      };
-    };
-  };
-};
-
-console.log(x(1)(2)(3)(4));
+  console.log(count);
+})();
