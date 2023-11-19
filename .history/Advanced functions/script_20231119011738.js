@@ -152,17 +152,119 @@
 // fn(1, 2, 3);
 
 // this keyword
-let username = "tester2";
+// let username = "tester2";
 
-let user = {
-  username: "tester",
-  rc1: () => {
-    console.log("Subscribe to " + this.username);
-  },
-  rc2() {
-    console.log("Subscribe to " + this.username);
-  },
+// let user = {
+//   username: "tester",
+//   rc1: () => {
+//     console.log("Subscribe to " + this.username);
+//   },
+//   rc2() {
+//     console.log("Subscribe to " + this.username);
+//   },
+// };
+
+// user.rc1();
+// user.rc2();
+
+// Closures
+
+// lexical scope
+
+// var name = "test";
+// // global scope
+
+// function local() {
+//   // local scope
+
+//   console.log(name);
+//   var name2 = "test2";
+// }
+
+// local();
+
+// console.log(name2);
+
+// function subscribe() {
+//   var name = "Roadside Coder";
+//   function displayName() {
+//     alert(name);
+//   }
+//   displayName();
+// }
+
+// subscribe();
+
+// function makeFunc() {
+//   var name = "Mozilla";
+//   function displayName(num) {
+//     console.log(name, num);
+//   }
+//   return displayName;
+// }
+
+// makeFunc()(5);
+
+// Closure Scope Chain
+
+// var username = "Test";
+
+// function makeFunc() {
+//   var name = "Mozilla";
+//   function displayName(num) {
+//     console.log(name, num, username);
+//   }
+//   return displayName;
+// }
+
+// makeFunc()(7);
+
+// const e = 10;
+// let x = function sum(a) {
+//   return function sum2(b) {
+//     return function sum3(c) {
+//       // outer functions scope
+//       return function sum4(d) {
+//         // local scope
+//         return a + b + c + d + e;
+//       };
+//     };
+//   };
+// };
+
+// console.log(x(1)(2)(3)(4));
+
+// let count = 0;
+// (function printCount() {
+//   if (count === 0) {
+//     let count = 1;
+//     console.log(count);
+//   }
+//   console.log(count);
+// })();
+
+var addSix = function (x) {
+  var y;
+  createBase = function (z) {
+    console.log(z);
+    y = z;
+  };
+  createBase(4);
+  console.log(y + x);
 };
 
-user.rc1();
-user.rc2();
+addSix(7);
+
+console.log("2Exp");
+
+function createBase2(num) {
+  return function (innerNum) {
+    console.log(innerNum + num);
+  };
+}
+
+var addSix2 = createBase2(4);
+
+addSix2(7);
+
+// createBase2(4)(7);

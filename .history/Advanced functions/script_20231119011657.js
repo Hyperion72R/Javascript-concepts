@@ -263,8 +263,7 @@ function createBase2(num) {
   };
 }
 
-var addSix2 = createBase2(4);
+// var addSix2 = createBase2(4);
 
-addSix2(7);
-
-// createBase2(4)(7);
+// addSix2(7);
+createBase2(4)(7)(7);

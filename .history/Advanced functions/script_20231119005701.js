@@ -244,27 +244,7 @@
 // })();
 
 var addSix = function (x) {
-  var y;
-  createBase = function (z) {
-    console.log(z);
-    y = z;
-  };
-  createBase(4);
-  console.log(y + x);
+  console.log(x + 6);
 };
 
 addSix(7);
-
-console.log("2Exp");
-
-function createBase2(num) {
-  return function (innerNum) {
-    console.log(innerNum + num);
-  };
-}
-
-var addSix2 = createBase2(4);
-
-addSix2(7);
-
-// createBase2(4)(7);

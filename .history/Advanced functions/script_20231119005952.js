@@ -171,13 +171,83 @@
 
 // lexical scope
 
-var name = "test";
-// global scope
+// var name = "test";
+// // global scope
 
-function local() {
-  // local scope
+// function local() {
+//   // local scope
 
-  console.log(name);
-}
+//   console.log(name);
+//   var name2 = "test2";
+// }
 
-local();
+// local();
+
+// console.log(name2);
+
+// function subscribe() {
+//   var name = "Roadside Coder";
+//   function displayName() {
+//     alert(name);
+//   }
+//   displayName();
+// }
+
+// subscribe();
+
+// function makeFunc() {
+//   var name = "Mozilla";
+//   function displayName(num) {
+//     console.log(name, num);
+//   }
+//   return displayName;
+// }
+
+// makeFunc()(5);
+
+// Closure Scope Chain
+
+// var username = "Test";
+
+// function makeFunc() {
+//   var name = "Mozilla";
+//   function displayName(num) {
+//     console.log(name, num, username);
+//   }
+//   return displayName;
+// }
+
+// makeFunc()(7);
+
+// const e = 10;
+// let x = function sum(a) {
+//   return function sum2(b) {
+//     return function sum3(c) {
+//       // outer functions scope
+//       return function sum4(d) {
+//         // local scope
+//         return a + b + c + d + e;
+//       };
+//     };
+//   };
+// };
+
+// console.log(x(1)(2)(3)(4));
+
+// let count = 0;
+// (function printCount() {
+//   if (count === 0) {
+//     let count = 1;
+//     console.log(count);
+//   }
+//   console.log(count);
+// })();
+
+var addSix = function (x) {
+  createBase = function (y) {
+    console.log(y);
+  };
+  console.log(y + x);
+};
+createBase(4);
+addSix(7);
