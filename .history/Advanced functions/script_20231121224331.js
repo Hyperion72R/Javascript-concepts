@@ -288,27 +288,14 @@
 // closure(50);
 // console.timeEnd("50");
 
-// normal ver
 // for (var i = 0; i < 3; i++) {
 //   setTimeout(function log() {
 //     console.log(i);
 //   }, i * 1000);
 // }
 
-// let ver
-// for (let i = 0; i < 3; i++) {
-//   setTimeout(function log() {
-//     console.log(i);
-//   }, i * 1000);
-// }
-
-// 2 var ver
-for (var i = 0; i < 3; i++) {
-  function inner(i) {
-    setTimeout(function log() {
-      console.log(i);
-    }, i * 1000);
-  }
-
-  inner(i);
+for (let i = 0; i < 3; i++) {
+  setTimeout(function log() {
+    console.log(i);
+  }, i * 1000);
 }

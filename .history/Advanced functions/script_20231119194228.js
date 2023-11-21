@@ -269,16 +269,23 @@
 
 // createBase2(4)(7);
 
-// function find() {
-//   let a = [];
-//   for (let i = 0; i < 1000000; i++) {
-//     a[i] = i * i;
-//   }
+function find() {
+  let a = [];
+  for (let i = 0; i < 1000000; i++) {
+    a[i] = i * i;
+  }
 
-//   return function (index) {
-//     console.log(a[index]);
-//   };
-// }
+  return function (index) {
+    console.log(a[index]);
+  };
+}
+
+console.time("6");
+find()(6);
+console.timeEnd("6");
+console.time("50");
+find()(50);
+console.timeEnd("50");
 
 // const closure = find();
 // console.time("6");
@@ -287,28 +294,3 @@
 // console.time("50");
 // closure(50);
 // console.timeEnd("50");
-
-// normal ver
-// for (var i = 0; i < 3; i++) {
-//   setTimeout(function log() {
-//     console.log(i);
-//   }, i * 1000);
-// }
-
-// let ver
-// for (let i = 0; i < 3; i++) {
-//   setTimeout(function log() {
-//     console.log(i);
-//   }, i * 1000);
-// }
-
-// 2 var ver
-for (var i = 0; i < 3; i++) {
-  function inner(i) {
-    setTimeout(function log() {
-      console.log(i);
-    }, i * 1000);
-  }
-
-  inner(i);
-}

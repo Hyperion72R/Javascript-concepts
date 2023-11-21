@@ -195,12 +195,101 @@
 
 // subscribe();
 
-function makeFunc() {
-  var name = "Mozilla";
-  function displayName(num) {
-    console.log(name);
-  }
-  return displayName;
-}
+// function makeFunc() {
+//   var name = "Mozilla";
+//   function displayName(num) {
+//     console.log(name, num);
+//   }
+//   return displayName;
+// }
 
-makeFunc()(5);
+// makeFunc()(5);
+
+// Closure Scope Chain
+
+// var username = "Test";
+
+// function makeFunc() {
+//   var name = "Mozilla";
+//   function displayName(num) {
+//     console.log(name, num, username);
+//   }
+//   return displayName;
+// }
+
+// makeFunc()(7);
+
+// const e = 10;
+// let x = function sum(a) {
+//   return function sum2(b) {
+//     return function sum3(c) {
+//       // outer functions scope
+//       return function sum4(d) {
+//         // local scope
+//         return a + b + c + d + e;
+//       };
+//     };
+//   };
+// };
+
+// console.log(x(1)(2)(3)(4));
+
+// let count = 0;
+// (function printCount() {
+//   if (count === 0) {
+//     let count = 1;
+//     console.log(count);
+//   }
+//   console.log(count);
+// })();
+
+// var addSix = function (x) {
+//   var y;
+//   createBase = function (z) {
+//     console.log(z);
+//     y = z;
+//   };
+//   createBase(4);
+//   console.log(y + x);
+// };
+
+// addSix(7);
+
+// console.log("2Exp");
+
+// function createBase2(num) {
+//   return function (innerNum) {
+//     console.log(innerNum + num);
+//   };
+// }
+
+// var addSix2 = createBase2(4);
+
+// addSix2(7);
+
+// createBase2(4)(7);
+
+// function find() {
+//   let a = [];
+//   for (let i = 0; i < 1000000; i++) {
+//     a[i] = i * i;
+//   }
+
+//   return function (index) {
+//     console.log(a[index]);
+//   };
+// }
+
+// const closure = find();
+// console.time("6");
+// closure(6);
+// console.timeEnd("6");
+// console.time("50");
+// closure(50);
+// console.timeEnd("50");
+
+for (var i = 0; i < 3; i++) {
+  setTimeout(function log() {
+    console.log(i);
+  }, i * 1000);
+}
