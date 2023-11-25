@@ -323,14 +323,19 @@ function counter() {
   }
 
   function retrive() {
-    return "Counter = " + _counter;
+    return "Counter =" + _counter;
   }
 
-  return { add, retrive };
+  return {
+    add,
+    retrive,
+  };
 }
 
 var c = counter();
 
-c.add(7);
-c.add(7);
-console.log(c.retrive());
+// c.add(7)
+// c.add(7)
+// c.retrive()
+
+c(7);

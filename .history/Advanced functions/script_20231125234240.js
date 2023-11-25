@@ -322,15 +322,17 @@ function counter() {
     _counter += increment;
   }
 
-  function retrive() {
-    return "Counter = " + _counter;
-  }
+  // function retrive() {
+  //   return "Counter = " + _counter;
+  // }
 
-  return { add, retrive };
+  return add;
 }
 
-var c = counter();
+// var c = counter();
 
-c.add(7);
-c.add(7);
-console.log(c.retrive());
+// c.add(7);
+// c.add(7);
+// console.log(c.retrive());
+
+counter()(7);

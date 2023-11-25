@@ -269,24 +269,24 @@
 
 // createBase2(4)(7);
 
-// function find() {
-//   let a = [];
-//   for (let i = 0; i < 1000000; i++) {
-//     a[i] = i * i;
-//   }
+function find() {
+  let a = [];
+  for (let i = 0; i < 1000000; i++) {
+    a[i] = i * i;
+  }
 
-//   return function (index) {
-//     console.log(a[index]);
-//   };
-// }
+  return function XXX(index) {
+    console.log(a[index]);
+  };
+}
 
-// const closure = find();
-// console.time("6");
-// closure(6);
-// console.timeEnd("6");
-// console.time("50");
-// closure(50);
-// console.timeEnd("50");
+const closure = find();
+console.time("6");
+closure(6);
+console.timeEnd("6");
+console.time("50");
+closure(50);
+console.timeEnd("50");
 
 // normal ver
 // for (var i = 0; i < 3; i++) {
@@ -315,22 +315,25 @@
 
 // Private counter
 
-function counter() {
-  var _counter = 0;
+// function counter() {
+//   var _counter = 0;
 
-  function add(increment) {
-    _counter += increment;
-  }
+//   function add(increment) {
+//     _counter += increment;
+//   }
 
-  function retrive() {
-    return "Counter = " + _counter;
-  }
+//   function retrive() {
+//     return "Counter = " + _counter;
+//   }
 
-  return { add, retrive };
-}
+//   return {
+//     add,
+//     retrive,
+//   };
+// }
 
-var c = counter();
+// var c = counter();
 
-c.add(7);
-c.add(7);
-console.log(c.retrive());
+// c.add(7);
+// c.add(7);
+// console.log(c.retrive());

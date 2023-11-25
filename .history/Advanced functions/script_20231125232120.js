@@ -321,16 +321,4 @@ function counter() {
   function add(increment) {
     _counter += increment;
   }
-
-  function retrive() {
-    return "Counter = " + _counter;
-  }
-
-  return { add, retrive };
 }
-
-var c = counter();
-
-c.add(7);
-c.add(7);
-console.log(c.retrive());

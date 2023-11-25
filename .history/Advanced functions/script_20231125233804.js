@@ -195,15 +195,18 @@
 
 // subscribe();
 
-// function makeFunc() {
-//   var name = "Mozilla";
-//   function displayName(num) {
-//     console.log(name, num);
-//   }
-//   return displayName;
-// }
+function makeFunc() {
+  var name = "Mozilla";
+  function displayName(num) {
+    console.log(name, num);
+  }
+  return displayName;
+}
 
 // makeFunc()(5);
+
+var x = makeFunc();
+x.displayName(7);
 
 // Closure Scope Chain
 
@@ -315,22 +318,25 @@
 
 // Private counter
 
-function counter() {
-  var _counter = 0;
+// function counter() {
+//   var _counter = 0;
 
-  function add(increment) {
-    _counter += increment;
-  }
+//   function add(increment) {
+//     _counter += increment;
+//   }
 
-  function retrive() {
-    return "Counter = " + _counter;
-  }
+//   function retrive() {
+//     return "Counter = " + _counter;
+//   }
 
-  return { add, retrive };
-}
+//   return {
+//     add,
+//     retrive,
+//   };
+// }
 
-var c = counter();
+// var c = counter();
 
-c.add(7);
-c.add(7);
-console.log(c.retrive());
+// c.add(7);
+// c.add(7);
+// console.log(c.retrive());

@@ -326,7 +326,7 @@ function counter() {
     return "Counter = " + _counter;
   }
 
-  return { add, retrive };
+  return add, retrive;
 }
 
 var c = counter();

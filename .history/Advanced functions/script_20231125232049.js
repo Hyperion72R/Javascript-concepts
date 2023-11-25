@@ -319,18 +319,6 @@ function counter() {
   var _counter = 0;
 
   function add(increment) {
-    _counter += increment;
+    return (_counter += increment);
   }
-
-  function retrive() {
-    return "Counter = " + _counter;
-  }
-
-  return { add, retrive };
 }
-
-var c = counter();
-
-c.add(7);
-c.add(7);
-console.log(c.retrive());

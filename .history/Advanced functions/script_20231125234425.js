@@ -320,17 +320,22 @@ function counter() {
 
   function add(increment) {
     _counter += increment;
+    console.log(_counter);
   }
 
-  function retrive() {
-    return "Counter = " + _counter;
-  }
+  // function retrive() {
+  //   return "Counter = " + _counter;
+  // }
 
-  return { add, retrive };
+  return add;
 }
 
-var c = counter();
+// var c = counter();
 
-c.add(7);
-c.add(7);
-console.log(c.retrive());
+// c.add(7);
+// c.add(7);
+// console.log(c.retrive());
+
+var c = counter();
+c(7);
+c(7);
