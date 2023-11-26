@@ -336,20 +336,3 @@
 // console.log(c.retrive());
 
 // Module Pattern
-
-var Module = (function () {
-  function privateMethod() {
-    // do something
-    console.log("private");
-  }
-
-  return {
-    publicMethod: function () {
-      console.log("public");
-    },
-  };
-})();
-
-Module.publicMethod();
-
-Module.privateMethodd();
