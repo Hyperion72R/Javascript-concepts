@@ -370,7 +370,6 @@ function RunOnlyOnce() {
   };
 }
 
-let IsRunnig = RunOnlyOnce();
-IsRunnig();
-IsRunnig();
-IsRunnig();
+x = RunOnlyOnce();
+x();
+x();

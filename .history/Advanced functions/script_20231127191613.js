@@ -370,7 +370,10 @@ function RunOnlyOnce() {
   };
 }
 
-let IsRunnig = RunOnlyOnce();
-IsRunnig();
-IsRunnig();
-IsRunnig();
+// let IsRunnig = RunOnlyOnce();
+// IsRunnig();
+// IsRunnig();
+// IsRunnig();
+
+RunOnlyOnce()();
+RunOnlyOnce()();

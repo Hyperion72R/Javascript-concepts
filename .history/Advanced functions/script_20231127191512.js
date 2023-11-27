@@ -354,8 +354,6 @@
 
 // Module.privateMethodd();
 
-let view;
-
 function RunOnlyOnce() {
   let called = 0;
 

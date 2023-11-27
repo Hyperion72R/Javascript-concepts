@@ -365,12 +365,6 @@ function RunOnlyOnce() {
     } else {
       view = "Test One";
       console.log("This is", view);
-      called++;
     }
   };
 }
-
-let IsRunnig = RunOnlyOnce();
-IsRunnig();
-IsRunnig();
-IsRunnig();

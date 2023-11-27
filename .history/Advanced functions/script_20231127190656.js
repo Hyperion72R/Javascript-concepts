@@ -356,7 +356,7 @@
 
 let view;
 
-function RunOnlyOnce() {
+function RunOnlyOnce(params) {
   let called = 0;
 
   return function () {
@@ -365,12 +365,6 @@ function RunOnlyOnce() {
     } else {
       view = "Test One";
       console.log("This is", view);
-      called++;
     }
   };
 }
-
-let IsRunnig = RunOnlyOnce();
-IsRunnig();
-IsRunnig();
-IsRunnig();

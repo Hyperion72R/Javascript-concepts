@@ -356,21 +356,11 @@
 
 let view;
 
-function RunOnlyOnce() {
-  let called = 0;
-
-  return function () {
-    if (called > 0) {
-      console.log("Already run");
-    } else {
-      view = "Test One";
-      console.log("This is", view);
-      called++;
-    }
-  };
+function RunOnlyOnce(params) {
+  function adv() {
+    console.log("This is", view);
+    view = "Test 1";
+  }
 }
 
-let IsRunnig = RunOnlyOnce();
-IsRunnig();
-IsRunnig();
-IsRunnig();
+RunOnlyOnce()();
