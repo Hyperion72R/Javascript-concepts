@@ -390,8 +390,8 @@ function once(func, context) {
   };
 }
 
-const hello = once((a, b) => console.log("hello", a, b));
+const hello = () => console.log("hello");
 
-hello(1, 2);
+hello();
 hello();
 hello();

@@ -382,16 +382,7 @@ function once(func, context) {
 
   return function () {
     if (func) {
-      ran = func.apply(context || this, arguments);
-      func = null;
+      ran = func.apply(context || this);
     }
-
-    return ran;
   };
 }
-
-const hello = once((a, b) => console.log("hello", a, b));
-
-hello(1, 2);
-hello();
-hello();
