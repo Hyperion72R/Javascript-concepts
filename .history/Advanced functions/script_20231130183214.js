@@ -398,32 +398,12 @@
 
 // Implement Caching/Memoize Function
 
-function myMemoize(fn, context) {
-  const res = {};
-  return function (...args) {
-    var argsCache = JSON.stringify(args);
-    if (!res[argsCache]) {
-      res[argsCache] = fn.call(context || this, ...args);
-    }
-    return res[argsCache];
-  };
-}
-
-// res = {
-//   "5,6":30
-// }
-
 const clumsysquare = (num1, num2) => {
-  for (let index = 1; index < 100000000; index++) {}
+  for (let index = 1; index < 1000000000; index++) {}
   return num1 * num2;
 };
 
-const memoizedClum = myMemoize(clumsysquare);
+console.time("First call");
+console.log(clumsysquare(9467, 7649));
 
 console.time("First call");
-console.log(memoizedClum(9467, 7649));
-console.timeEnd("First call");
-
-console.time("First call");
-console.log(memoizedClum(9467, 7649));
-console.timeEnd("First call");
