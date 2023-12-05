@@ -429,12 +429,8 @@
 // console.timeEnd("First call");
 
 // Difference between Closure and scope
-// #####################################################
-// closure -> func with another func, inner func is the closures, if last func return we can use variables at later time
 
-// scope -> define what variable we have access to. We have global scope and local scope
-// #####################################################
-// Currying
+// Curring
 
 // function f(a,b) {
 //   console.log(a,b)
@@ -447,9 +443,7 @@
 // }
 
 function f(a) {
-  return function (b) {
-    return `${a} ${b}`;
-  };
+  return `${a} ${b}`;
 }
 
 console.log(f(5)(7));
