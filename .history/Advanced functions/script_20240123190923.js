@@ -465,21 +465,12 @@
 
 // console.log(sum(1)(2)(3));
 
-function evaluate(sum, substract, multiply, divide) {
-  x = sum || substract || multiply || divide;
+function evaluate(x, y, z) {
   return function (num1) {
     return function (num2) {
-      if (x == "sum") {
-        return (x = num1 + num2);
-      } else if (x == "substract") {
-        return (x = num1 - num2);
-      } else if (x == "multiply") {
-        return (x = num1 * num2);
-      } else if (x == "divide") {
-        return (x = num1 / num2);
-      } else console.log("error");
+      return x + y + z + num1 + num2;
     };
   };
 }
 
-console.log(evaluate("sum")(3)(2));
+console.log(evaluate(1, 1)(1)(1));

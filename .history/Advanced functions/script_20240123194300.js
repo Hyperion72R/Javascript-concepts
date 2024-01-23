@@ -465,8 +465,8 @@
 
 // console.log(sum(1)(2)(3));
 
-function evaluate(sum, substract, multiply, divide) {
-  x = sum || substract || multiply || divide;
+function evaluate(sum, substract, multiply) {
+  x = sum || substract || multiply;
   return function (num1) {
     return function (num2) {
       if (x == "sum") {
@@ -475,11 +475,12 @@ function evaluate(sum, substract, multiply, divide) {
         return (x = num1 - num2);
       } else if (x == "multiply") {
         return (x = num1 * num2);
-      } else if (x == "divide") {
-        return (x = num1 / num2);
       } else console.log("error");
+      return function (x) {
+        return x;
+      };
     };
   };
 }
 
-console.log(evaluate("sum")(3)(2));
+console.log(evaluate("test")(3)(2));

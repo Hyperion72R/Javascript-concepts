@@ -454,32 +454,12 @@
 
 // console.log(f(5)(7));
 
-// function sum(a) {
-//   return function (b) {
-//     return function (c) {
-//       let x = a + b + c;
-//       return x;
-//     };
-//   };
-// }
-
-// console.log(sum(1)(2)(3));
-
-function evaluate(sum, substract, multiply, divide) {
-  x = sum || substract || multiply || divide;
-  return function (num1) {
-    return function (num2) {
-      if (x == "sum") {
-        return (x = num1 + num2);
-      } else if (x == "substract") {
-        return (x = num1 - num2);
-      } else if (x == "multiply") {
-        return (x = num1 * num2);
-      } else if (x == "divide") {
-        return (x = num1 / num2);
-      } else console.log("error");
+function sum(a) {
+  return function (b) {
+    return function (c) {
+      return `${a} ${b} ${c}`;
     };
   };
 }
 
-console.log(evaluate("sum")(3)(2));
+console.log(sum(1)(2)(3));

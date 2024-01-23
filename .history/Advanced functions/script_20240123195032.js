@@ -482,4 +482,4 @@ function evaluate(sum, substract, multiply, divide) {
   };
 }
 
-console.log(evaluate("sum")(3)(2));
+console.log(evaluate("multiply")(3)(2));

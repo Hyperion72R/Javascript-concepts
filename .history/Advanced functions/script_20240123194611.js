@@ -476,10 +476,13 @@ function evaluate(sum, substract, multiply, divide) {
       } else if (x == "multiply") {
         return (x = num1 * num2);
       } else if (x == "divide") {
-        return (x = num1 / num2);
+        return x == num1 / num2;
       } else console.log("error");
+      return function (x) {
+        return x;
+      };
     };
   };
 }
 
-console.log(evaluate("sum")(3)(2));
+console.log(evaluate("multiply")(3)(2));
